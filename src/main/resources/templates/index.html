@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Toggle Button Example</title>
+</head>
+<body>
+<h1>Toggle Button Example</h1>
+
+<form th:action="@{/toggle}" method="post">
+    <label>
+        Toggle Feature:
+        <input type="checkbox" name="toggle" th:checked="${featureEnabled}" th:value="${featureEnabled}" />
+    </label>
+    <br/>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
